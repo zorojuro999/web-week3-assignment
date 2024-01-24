@@ -11,13 +11,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     .font-manrope{font-family: 'Manrope', sans-serif;}
+    hr{
+      margin-top: 360px;
+      border: none;
+      border: 1px dotted rgb(140, 138, 138);
+    }
   </style>
 </head>
 <body class="font-manrope">
-  <header class="max-w-[1170px] mx-auto">
+  <header class="lg:max-w-[1170px] mx-5 lg:mx-auto">
 
     <!-- navbar -->
-     <nav class="my-16">
+     <nav class=" my-16 ">
       <div class="navbar bg-base-100">
         <div class="navbar-start">
           <div class="dropdown">
@@ -51,10 +56,106 @@
      </nav>
 
      <!-- carousel  -->
+      <div class="carousel lg:max-h-[550px] mb-5 lg:mb-24">
+        <!-- slide 1 -->
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="./Images/1.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn border-none text-white bg-black btn-circle">❮</a> 
+            <a href="#slide2" class="btn border-none text-white bg-black btn-circle">❯</a>
+          </div>
+        </div> 
+        <!-- slide 2 -->
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="./Images/2.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn border-none text-white bg-black btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn border-none text-white bg-black btn-circle">❯</a>
+          </div>
+        </div> 
+        <!-- slide 3 -->
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="./Images/3.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn border-none text-white bg-black btn-circle">❮</a> 
+            <a href="#slide4" class="btn btn border-none text-white bg-black btn-circle">❯</a>
+          </div>
+        </div> 
+        <!-- slide 4 -->
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="./Images/4.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn border-none text-white bg-black btn-circle">❮</a> 
+            <a href="#slide1" class="btn btn border-none text-white bg-black btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+      <!-- black box -->
+      <div class="bg-black rounded-xl p-8 w-full lg:w-2/4 lg:translate-x-3/4 lg:ml-24 lg:-mt-72 mb-14 lg:mb-0">
+        <h3 class="text-white text-2xl font-extrabold pb-4">Meet all the heroes from the field</h3>
+        <p class="text-gray-400 text-base font-semibold">Our club is not just a team; it's a brotherhood/sisterhood of passionate athletes dedicated to the artistry and power of hockey.</p>
+      </div>
+     
+      <hr>
 
+      <!-- pro club -->
+
+    <section class="my-16">
+      <h2 class="text-center text-4xl font-extrabold lg:pt-28">Professional Hockeys Club</h2>
+      <p class="text-center text-base font-normal pt-7"> Our players, coaches, and staff work seamlessly to create an environment <br> that fosters growth, discipline, and a winning mentality.</p>
+<!-- first card -->
+      <div class="grid gap-6 space-y-6grid-cols-1 lg:grid-cols-4">
+         <div>
+          <div class="radial-progress text-red-500 font-bold mb-5 lg:mt-12 mt-6 translate-x-44 lg:translate-x-28 " style="--value:87;" role="progressbar">87%</div>
+          <h5 class="text-xl font-semibold text-center mb-3">Prayer Facility</h5>
+          <p class="text-base font-normal text-center">Understanding the importance of <br> religious practices</p>
+         </div>
+<!-- second card -->
+         <div>
+          <div class="radial-progress text-green-500 font-bold mb-5 lg:mt-12 translate-x-44 lg:translate-x-28" style="--value:95;" role="progressbar">95%</div>
+          <h5 class="text-xl font-semibold text-center mb-3">Experienced Coach</h5>
+          <p class="text-base font-normal text-center">Tailored training programs <br> and insightful guidance</p>
+         </div>
+<!-- Third card -->
+         <div>
+          <div class="radial-progress text-yellow-400 font-bold mb-5 lg:mt-12 translate-x-44 lg:translate-x-28" style="--value:90;" role="progressbar">90%</div>
+          <h5 class="text-xl font-semibold text-center mb-3">Senior Player</h5>
+          <p class="text-base font-normal text-center">A testament to resilience, perseverance, <br> and a relentless passion</p>
+         </div>
+<!-- Fourth card -->
+         <div>
+          <div class="radial-progress text-blue-500 font-bold mb-5 lg:mt-12 translate-x-44 lg:translate-x-28" style="--value:80;" role="progressbar">80%</div>
+          <h5 class="text-xl font-semibold text-center mb-3">Training Ground</h5>
+          <p class="text-base font-normal text-center">Meticulously maintained ice rinks to <br> advanced fitness facilities</p>
+         </div>
+      </div>
+    </section>
+    <hr>
   </header>
-  <main>
-
+  <main class="lg:max-w-[1170px] mx-5 lg:mx-auto">
+    <section>
+      <h3 class="text-4xl text-black text-center font-extrabold mt-8">Program Sections</h3>
+      <p class="text-base text-black text-center font-normal mt-4 mb-8">Engage in our comprehensive fitness programs tailored to suit all levels of athleticism.</p>
+      <hr>
+    
+      <div class="mt-12 flex flex-col lg:flex-row  gap-6">
+        <div class="bg-[url('./Images/2.png')] rounded-2xl bg-cover h-72 w- lg:w-full">
+          <h3 class="text-white text-3xl font-extrabold pt-20 pl-10">Junior Program</h3> 
+          <p class="text-white text-base font-normal pt-4 pl-10">Immerse your young athletes in our Junior Hockey Development Program, where budding players embark on a journey of skill enhancement and character building. </p>
+          <button class="btn border-none px-5 py-2 mt-3 ml-10 rounded-lg bg-red-500 text-white">Register Now!</button>
+        </div>
+        <div  class="bg-[url('./Images/3.png')] rounded-2xl bg-cover h-72 w-full">
+          <h3 class=" text-white text-3xl font-extrabold  pt-16 pl-10">Teenager Program</h3> 
+          <p class="text-white text-base font-normal pt-4 pl-10"> Led by experienced coaches, this program caters to the competitive spirit of teenage players, offering intensive on-ice drills, video analysis, and strength conditioning to take their game to the next level. </p>
+          <button class="btn border-none px-5 py-2 mt-3 ml-10 rounded-lg bg-red-500 text-white">Register Now!</button>
+        </div>
+      </div>
+      <div class="bg-[url('./Images/4.png')] rounded-2xl bg-cover mt-6  h-72 lg:h-96 w- lg:w-full">
+        <h3 class="text-white text-3xl font-extrabold pt-16 lg:pt-40 pl-10">Professional Program</h3> 
+        <p class="text-white text-base font-normal pt-4 pl-10">Tailored for seasoned athletes and aspiring professionals, <br> this program is designed to elevate your skills, mindset, <br> and overall performance to the highest level in the world of hockey.</p>
+        <button class="btn border-none px-5 py-2 mt-3 ml-10 rounded-lg bg-red-500 text-white">Register Now!</button>
+      </div>
+    </section>
   </main>
   <footer>
 
